@@ -123,13 +123,6 @@ Wait for the nodes and system pods to become ready. Troubleshoot any networking 
 - Joining worker nodes to a cluster.
 - Basic Kubernetes cluster verification and troubleshooting.
 
-## Important Notes
-
-- The scripts currently configure Kubernetes from the v1.29 package repository and install Calico v3.26.0. Verify version compatibility before setting up a new cluster.
-- The swap configuration in `common.sh` applies to the current session and is not made persistent across reboots.
-- Review `master.sh` before execution: it uses `--ignore-preflight-errors=all`, which can mask important setup problems. Resolve preflight errors rather than routinely ignoring them.
-- This repository covers **cluster setup only**. It does not include application deployment.
-
 ## Author
 
 **Prajwal Take**
